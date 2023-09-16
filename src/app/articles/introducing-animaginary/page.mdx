@@ -1,0 +1,50 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import diagram from './diagram.jpg'
+import areaXlogo from './areaXlogo.jpg'
+
+
+export const article = {
+  author: 'Ben Poole',
+  date: '2019-10-23',
+  title: 'J.P. Morgan launches AreaX to rethink processes across its Corporate & Investment Bank',
+  description:
+    'A new programme for new product development and uncovering opportunities to transform operations and workflows. The goal is not only to spark innovation, but to quickly determine whether an idea or a process improvement can be implemented at scale',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+<Image src={areaXlogo} alt="" />
+
+J.P. Morgan has announced a new programme, AreaX, that is charged with taking a concept to working prototype within six to 12 weeks, and re-thinking processes across the Corporate & Investment Bank (CIB). As the bank evolves for the future, AreaX is primarily focused on new idea product development and uncovering opportunities to transform operations and workflows. Led by Michael Elanjian, head of CIB Digital Strategy and Fintech, and Lawrence Waller, head of CIB Operations Transformation, the global group holds expertise across strategy, product development, process transformation, data science, technology and user experience. The goal is not only to spark innovation, but to quickly determine whether an idea or a process improvement can be implemented at scale.
+
+"By building something functional but without all of the bells and whistles, we can quickly and more tangibly assess if we want to further invest in the offering, or fail quickly and move on,” said Elanjian. “I want us to spend more time doing product strategy validation and less time doing PowerPoint strategy." 
+
+According to Elanjian, changing a culture is not only about generating ideas, but testing these ideas early and ensuring that failure becomes a source of learning. While accepting failure is a challenge, failing fast and figuring out what went wrong early is much cheaper than developing the wrong product.
+
+The bank says that the AreaX name represents the global span of the team’s vision and footprint. Elanjian and Waller have organised employees into smaller cadres based on their 'area', or geographic location. The 'X' represents an idea that can be applied within the CIB. Before AreaX begins mapping out an idea, buy-in must be attained from the business that will eventually own responsibility for it.
+
+'Gates', or check-ins, with business teams are implemented throughout the execution phase. This should ensure that there is continued business support, that viability of the idea continues to hold and that changes can be accommodated right away. 
+
+“The firm wants to have the flexibility to pivot and reprioritise should an idea no longer be viable, even at the prototype stage,” says Ashish Shah, who runs the AreaX new idea product development programme. Should the prototype receive approval for production, AreaX hands it off to larger technology teams for development.
+
+Core to the AreaX programme is the belief that building innovative solutions demands an enhanced level of collaboration between product managers, designers, developers and business teams. Harnessing this expertise requires all stakeholders to dedicate time for design sprints and rapid innovation practices, which need real-time subject matter expertise. This should ultimately lead to a more relevant product.
+
+<Image src={diagram} alt="" />
+
+According to Imad Abusam, who leads the Area383 Manhattan digital accelerator, the objective of AreaX is to solve real problems: “A six-week development timeframe requires the team to be strategic and precise when deciding whether to mature the product or stand down. In addition to the overall feasibility of the idea, we consider data points such as long-term product strategy, monetisation opportunities and current market trends.”
+
+This centralised focus on innovation complements other disruptive initiatives that have been successfully executed at the firm, including an idea competition called Originate. 
+
+“When ‘always-on’ innovation is combined with the ability to try new things, real cultural change happens at the ground-level of the organisation,” says Shah. 
+
+Originate was an opportunity for analysts and associates within the CIB to submit an idea that solves a specific problem, or enhances an experience for clients or J.P. Morgan employees. Through a selection process, finalists were invited to present at a senior leadership conference in Miami. Selected ideas from Originate are implemented within individual businesses, or sent to into the AreaX for prototyping.
+
+“A core part of our culture is ensuring that employees feel engaged and able to contribute in a meaningful way,” said Elanjian. “Many of the ideas were provided with funding or merged with existing work already underway, underscoring the firm’s commitment to offering opportunities for its employees to help shape its future.”
+
+Original Article from https://ctmfile.com/story/j.p.-morgan-launches-areax-to-rethink-processes-across-its-corporate-invest
