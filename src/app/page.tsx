@@ -14,8 +14,8 @@ import {
 import logoChase from '@/images/logos/chase.svg'
 import logoEpistasis from '@/images/logos/epistasis.svg'
 import logoAsiaGreenFund from '@/images/logos/asiaGreenFund.svg'
-import logoRVAElectronics from '@/images/logos/rvaelectronics.svg'
-import logoSEED from '@/images/logos/seed.svg'
+//import logoRVAElectronics from '@/images/logos/rvaelectronics.svg'
+//import logoSEED from '@/images/logos/seed.svg'
 import peanut from '@/images/photos/peanut.jpg'
 import buffalo from '@/images/photos/buffalo.jpg'
 import mountains from '@/images/photos/mountains.jpg'
@@ -215,14 +215,14 @@ function Resume() {
     {
       company: 'SEED',
       title: 'Chief Investment Officer',
-      logo: logoSEED,
+      logo: logoAsiaGreenFund,
       start: '2015',
       end: '2017',
     },
     {
       company: 'RVA Electronics',
       title: 'Co-Founder',
-      logo: logoRVAElectronics,
+      logo: logoAsiaGreenFund,
       start: '2012',
       end: '2013',
     },
