@@ -48,7 +48,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'My Journey',
   description:
     'I’m Grey Weissend',
 }
@@ -69,19 +69,26 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Grey Weissend. 
+            My Journey
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              What drives me is empowering individuals to discover their why.             </p>
-            <p>
-            My own exploration of why has challenged and changed me in beautiful ways  - starting with my my first reaction to peanuts at 3. 
+            Lying on a bench outside a temple in Vietnam, my breath slowed to that of breathing through a paper straw that had prematurely disintegrated. It was taking all my energy to survive.
             </p>
             <p>
-            Opening to my fears, especially those that create unconscious reactions and finding places of love and kindness allowed my to develop tools like music, yoga, and meditation practices to calm my reactions and the trauma behind this response (and many others). 
+            This wasn’t my first allergic reaction, but it was my first where I was totally alone. No ambulance to take me to the hospital, no drugs to calm my body, no people to hold me. All I had was my breath.           
             </p>
             <p>
-            This journey created a new source of meaning and healing in my life. Now, I seek to help others find their own tools to heal themselves.
+            Meditation and focused breathing provided a sanctuary of calm amidst chaos - extending beyond peanuts to my work and life. When I concentrated on each breath, I anchored my awareness in the present moment. 
+            </p>
+            <p>
+            This mental shift allowed me to distance myself from the fear and discomfort associated with the allergic reaction, promoting a sense of peace and calmness. This shift allowed me to excel in 4 years of military academy, the trading floor of Wall Street, and the streets of 40+ foreign countries as I traveled and lived abroad.                    
+            </p>
+            <p>
+            Opening up to my fears, especially those that create unconscious reactions and finding places of love and kindness helped me to find new patterns of behavior. Along the way I began to practice techniques like yoga, meditation, and music that I found helpful to this shift.
+            </p>
+            <p>
+            This journey created a new source of meaning and healing in my life - and is a gift I want to share with others.    
             </p>
           </div>
         </div>

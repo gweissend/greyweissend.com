@@ -282,11 +282,14 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Explorer, designer and creator.
+            Explorer, creator and healer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Grey. I am skilled at going from 0 to 1. 
-            The creative process and solving problems are some of my favorite parts of life. I have also traveled extensively - both into my mind and accross the globe. 
+          I’m Grey Weissend. The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.  
+          </p>
+
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          In my personal life, I have focused on going from 1 to 0. Connecting with the most essential, basic elements of life - breath, meditation, and my own stories.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

@@ -31,6 +31,13 @@ const projects = [
     link: { href: 'https://therainbowkiss.com', label: 'Website' },
     logo: logoRainbowKiss,
   },
+  {
+    name: 'This Website',
+    description:
+      'Sharing my story and practicing code',
+    link: { href: 'https://github.com/gweissend/greyweissend.com', label: 'Github Repo' },
+    logo: logoRainbowKiss,
+  },
 
 ]
 
@@ -47,13 +54,13 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Things I’ve made.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
+      title="Things I’ve made."
       intro="I’ve worked on many projects over the years, from research articles to whole businesses. These are a few recent projects I am most proud of."
     >
       <ul
