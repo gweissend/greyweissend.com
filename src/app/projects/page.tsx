@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'AreaX',
     description:
-      'Product development program by J.P. Morgan to rapidaly validate digital solutions to critical business problems',
+      'A product development team and program I co-founded to rapidaly validate digital solutions to critical business problems',
     link: { href: 'https://www.jpmorgan.com/technology/innovation-accelerator', label: 'AreaX Website' },
     logo: logoAreaX,
   },
@@ -31,13 +31,13 @@ const projects = [
     link: { href: 'https://therainbowkiss.com', label: 'Website' },
     logo: logoRainbowKiss,
   },
-  {
-    name: 'This Website',
-    description:
-      'Sharing my story and practicing code',
-    link: { href: 'https://github.com/gweissend/greyweissend.com', label: 'Github Repo' },
-    logo: logoRainbowKiss,
-  },
+  // {
+  //   name: 'This Website',
+  //   description:
+  //     'Sharing my story and practicing code',
+  //   link: { href: 'https://github.com/gweissend/greyweissend.com', label: 'Github Repo' },
+  //   logo: logoRainbowKiss,
+  // },
 
 ]
 
