@@ -215,7 +215,7 @@ function Resume() {
     {
       company: 'SEED',
       title: 'Chief Investment Officer',
-      logo: logoAsiaGreenFund,
+      logo: logoSeed,
       start: '2015',
       end: '2017',
     },

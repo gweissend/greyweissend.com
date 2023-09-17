@@ -38,7 +38,6 @@ const projects = [
   //   link: { href: 'https://github.com/gweissend/greyweissend.com', label: 'Github Repo' },
   //   logo: logoRainbowKiss,
   // },
-
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
