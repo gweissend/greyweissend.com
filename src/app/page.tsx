@@ -222,7 +222,7 @@ function Resume() {
     {
       company: 'RVA Electronics',
       title: 'Co-Founder',
-      logo: logoAsiaGreenFund,
+      logo: logoRvaelectronics,
       start: '2012',
       end: '2013',
     },
