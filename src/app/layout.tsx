@@ -7,9 +7,9 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Grey Weissend',
+    template: 'Grey Weissend',
     default:
-      'Grey Weissend-*-- - Explorer, designer and creator.',
+      'Grey Weissend',
   },
   description:
     'Hey there',
