@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import wonder from '@/images/photos/wonder.jpg'
 
 function SocialLink({
   className,
@@ -60,7 +60,7 @@ export default function About() {
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
-              src={portraitImage}
+              src={wonder}
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
@@ -69,26 +69,26 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            My Journey
+          I'm a hybrid
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Lying on a bench outside a temple in Vietnam, my breath slowed to that of breathing through a paper straw that had prematurely disintegrated. It was taking all my energy to survive.
+            I innovate as an entrepreneur, but have worked in some of the largest and most bureaucratic organizations in the world. I spent my college life at a military institute as a civilian, much of my working life in one of the oldest banks in America, and my free time in refugee camps, ashrams and temples across the world. 
+            </p>            
+            <p>
+            While these may seem like a paradoxical collection of experiences, in reality they represent the intersection of political, business, and thought leaders, whose coordination and perspective is required for global innovation and change.
             </p>
             <p>
-            This wasn’t my first allergic reaction, but it was my first where I was totally alone. No ambulance to take me to the hospital, no drugs to calm my body, no people to hold me. All I had was my breath.           
+            When I was 16, I worked with Chinese factories, big-box retailers in the U.S., and online companies such as eBay and Amazon to develop two successful businesses before I graduated high school. 
             </p>
             <p>
-            Meditation and focused breathing provided a sanctuary of calm amidst chaos - extending beyond peanuts to my work and life. When I concentrated on each breath, I anchored my awareness in the present moment. 
+            I began to travel the East in my 20s and developed a deep affinity for ancient Eastern philosophy. This started with research in Syrian refugee communities and later led me to study and live in China, completing a masters degree as a Schwarzman Scholar, and India where I lived in an ashram in Himalaya and sat with the Dali Lama.  
             </p>
             <p>
-            This mental shift allowed me to distance myself from the fear and discomfort associated with the allergic reaction, promoting a sense of peace and calmness. This shift allowed me to excel in 4 years of military academy, the trading floor of Wall Street, and the streets of 40+ foreign countries as I traveled and lived abroad.                    
+            For the past 5 years, I built an incubation program inside J.P. Morgan Chase. I co-founded the program, helped grow the team from 2 to 40+ people with a global presence, and guided many ideas from 0 to 1 as a product manager (and sometimes designer, engineer, and QA). It was an incredible experience to develop and scale digital solutions for an institution started in 1799. 
             </p>
             <p>
-            Opening up to my fears, especially those that create unconscious reactions and finding places of love and kindness helped me to find new patterns of behavior. Along the way I began to practice techniques like yoga, meditation, and music that I found helpful to this shift.
-            </p>
-            <p>
-            This journey created a new source of meaning and healing in my life - and is a gift I want to share with others.    
+            This juxtaposition of ancient wisdom and cutting-edge innovation has helped me find balance within myself and illuminated the path toward crafting meaningful, impactful products for a global user base. 
             </p>
           </div>
         </div>
