@@ -22,7 +22,9 @@ import mountains from '@/images/photos/mountains.jpg'
 import kalidescope from '@/images/photos/kalidescope.jpg'
 import rocktop from '@/images/photos/rocktop.jpg'
 import wonder from '@/images/photos/wonder.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import cali1 from '@/images/photos/cali1.jpg'
+import cali2 from '@/images/photos/cali2.jpg'
+import cali3 from '@/images/photos/cali3.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -283,10 +285,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I am a builder
+           @ me
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I am Grey Weissend. The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.  
+         The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.  
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
