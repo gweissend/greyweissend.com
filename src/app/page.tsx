@@ -292,7 +292,7 @@ export default async function Home() {
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          In my personal life, I have focused on going from 1 to 0. Connecting with the most essential, basic elements of life - breath, meditation, and my own stories.
+          In my personal life, I have focused on connecting with the essential, basic elements of life - breath, meditation, and my own stories.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
