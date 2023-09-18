@@ -286,7 +286,7 @@ export default async function Home() {
             I am a builder
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Grey Weissend. The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.  
+          I am Grey Weissend. The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.  
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
