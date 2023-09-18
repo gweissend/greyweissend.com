@@ -25,7 +25,6 @@ import wonder from '@/images/photos/wonder.jpg'
 import cali1 from '@/images/photos/cali1.jpg'
 import cali2 from '@/images/photos/cali2.jpg'
 import cali3 from '@/images/photos/cali3.jpg'
-import resume from '@/images/resume.pdf'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
