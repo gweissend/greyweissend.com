@@ -209,7 +209,7 @@ function Resume() {
       end: '2023',
     },
     {
-      company: 'U.S. China Green Fund',
+      company: 'Asia Green Fund',
       title: 'Research Analyst',
       logo: logoAsiaGreenFund,
       start: '2017',
