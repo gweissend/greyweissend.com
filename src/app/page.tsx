@@ -22,9 +22,6 @@ import mountains from '@/images/photos/mountains.jpg'
 import kalidescope from '@/images/photos/kalidescope.jpg'
 import rocktop from '@/images/photos/rocktop.jpg'
 import wonder from '@/images/photos/wonder.jpg'
-import cali1 from '@/images/photos/cali1.jpg'
-import cali2 from '@/images/photos/cali2.jpg'
-import cali3 from '@/images/photos/cali3.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -242,7 +239,7 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href='https://drive.google.com/file/d/1A0xu-pfCHfjpE1rIrBxS9YofHBi8oMB0/view?usp=share_link' variant="secondary" className="group mt-6 w-full">
+      <Button href="https://drive.google.com/file/d/1hWZvnuQH1xNObVBLb-fH-M5RmAv88wZf/view?usp=share_link" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
