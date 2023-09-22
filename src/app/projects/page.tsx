@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -8,6 +8,7 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoIntelligence from '@/images/logos/intelligence.svg'
 import logoRainbowKiss from '@/images/logos/theRainbowKiss.svg'
 import logoAreaX from '@/images/logos/areaX.svg'
+import kalidescope from '@/images/photos/kalidescope.jpg'
 
 const projects = [
   {
@@ -28,7 +29,7 @@ const projects = [
     name: 'The Rainbow Kiss',
     description:
       'Spreading messages of healing and resilience.',
-    link: { href: 'https://therainbowkiss.com', label: 'Website' },
+    link: { href: 'https://therainbowkiss.com', label: 'Landing Page' },
     logo: logoRainbowKiss,
   },
   // {
