@@ -8,37 +8,39 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoIntelligence from '@/images/logos/intelligence.svg'
 import logoRainbowKiss from '@/images/logos/theRainbowKiss.svg'
 import logoAreaX from '@/images/logos/areaX.svg'
+import logoPersonal from '@/images/logos/personal.svg'
 import kalidescope from '@/images/photos/kalidescope.jpg'
 
 const projects = [
   {
     name: 'AreaX',
     description:
-      'A product development team and program I co-founded to rapidaly validate digital solutions to critical business problems',
+      'Building digital solutions to critical business problems',
     link: { href: 'https://www.jpmorgan.com/technology/innovation-accelerator', label: 'AreaX Website' },
     logo: logoAreaX,
   },
   {
     name: 'Intelligence',
     description:
-      'App providing direct access to real-time market data and alerts, curated news and research for JPM clients',
+      'Real-time market info, curated news and research for JPM clients',
     link: { href: 'https://apps.apple.com/us/app/intelligence-by-j-p-morgan/id1635779814', label: 'Apple App Store' },
     logo: logoIntelligence,
   },
   {
-    name: 'The Rainbow Kiss',
+    name: 'This Website',
     description:
-      'Spreading messages of healing and resilience.',
-    link: { href: 'https://therainbowkiss.com', label: 'Landing Page' },
-    logo: logoRainbowKiss,
+      'Peak at this codebase',
+    link: { href: 'https://github.com/gweissend/greyweissend.com', label: 'Github' },
+    logo: logoPersonal,
   },
   // {
-  //   name: 'This Website',
+  //   name: 'The Rainbow Kiss',
   //   description:
-  //     'Sharing my story and practicing code',
-  //   link: { href: 'https://github.com/gweissend/greyweissend.com', label: 'Github Repo' },
+  //     'Spreading messages of healing and resilience.',
+  //   link: { href: 'https://therainbowkiss.com', label: 'Landing Page' },
   //   logo: logoRainbowKiss,
   // },
+  
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
