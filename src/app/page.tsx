@@ -17,6 +17,7 @@ import logoAsiaGreenFund from '@/images/logos/asiaGreenFund.svg'
 import logoRvaelectronics from '@/images/logos/rvaelectronics.svg'
 import logoSeed from '@/images/logos/seed.svg'
 import peanut from '@/images/photos/peanut.jpg'
+import work from '@/images/photos/work.jpg'
 import buffalo from '@/images/photos/buffalo.jpg'
 import mountains from '@/images/photos/mountains.jpg'
 import kalidescope from '@/images/photos/kalidescope.jpg'
@@ -200,7 +201,7 @@ function Resume() {
     // },
     {
       company: 'J.P. Morgan Chase',
-      title: 'VP of Product Management',
+      title: 'VP, Product Management',
       logo: logoChase,
       start: '2018',
       end: '2023',
@@ -253,7 +254,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[buffalo, peanut, kalidescope, rocktop, mountains].map((image, imageIndex) => (
+        {[buffalo, rocktop, kalidescope, work , mountains].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
