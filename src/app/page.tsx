@@ -402,10 +402,10 @@ export default async function Home() {
                   Ready to build?
                 </h2>
                 <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
-                  Let's create something amazing together
+                  Let&apos;s create something amazing together
                 </h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
-                  I build full-stack web applications from concept to deployment. Let's discuss your project.
+                  I build full-stack web applications from concept to deployment. Let&apos;s discuss your project.
                 </p>
                 <a
                   href="https://calendly.com/greyweissend"
@@ -413,7 +413,7 @@ export default async function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-md bg-teal-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors"
                 >
-                  Let's talk
+                  Let&apos;s talk
                 </a>
               </div>
             </div>
