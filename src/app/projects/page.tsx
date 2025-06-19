@@ -125,7 +125,7 @@ export default function Projects() {
           </hgroup>
           <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-zinc-600 dark:text-zinc-400">
             I specialize in building full-stack web applications from concept to deployment. 
-            Whether you need a health platform, networking tool, or custom solution, let's discuss your project.
+            Whether you need a health platform, networking tool, or custom solution, let&apos;s discuss your project.
           </p>
           <div className="mt-8 flex justify-center">
             <a
@@ -134,7 +134,7 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="rounded-md bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors"
             >
-              Let's talk
+              Let&apos;s talk
             </a>
           </div>
         </div>
