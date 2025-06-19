@@ -9,9 +9,33 @@ import logoIntelligence from '@/images/logos/intelligence.svg'
 import logoRainbowKiss from '@/images/logos/theRainbowKiss.svg'
 import logoAreaX from '@/images/logos/areaX.svg'
 import logoPersonal from '@/images/logos/personal.svg'
+import logoMyHealthApp from '@/images/logos/myhealthapp.svg'
+import logoJustBurnt from '@/images/logos/burnt-logo.svg'
+import logoReeBee from '@/images/logos/ReeBee.svg'
 import kalidescope from '@/images/photos/kalidescope.jpg'
 
 const projects = [
+  {
+    name: 'My Health App',
+    description:
+      'Health risk assessment platform with dynamic scoring and actionable insights',
+    link: { href: 'https://myhealthapp.org/', label: 'myhealthapp.org' },
+    logo: logoMyHealthApp,
+  },
+  {
+    name: 'Burnt',
+    description:
+      'Private networking platform for top performers featuring vetted introductions and exclusive community access',
+    link: { href: 'https://www.justburnt.com/', label: 'justburnt.com' },
+    logo: logoJustBurnt,
+  },
+  {
+    name: 'Reebee',
+    description:
+      'Symptom tracking platform for allergies, asthma, COPD, and eczema to help identify patterns and correlations',
+    link: { href: 'https://www.reebee.org/', label: 'reebee.org' },
+    logo: logoReeBee,
+  },
   {
     name: 'AreaX',
     description:
@@ -56,14 +80,14 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made.',
+  description: 'Things I\'ve made.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made"
-      intro="I’ve worked on many projects over the years, from research articles to whole businesses. These are a few recent ones."
+      title="Things I've made"
+      intro="I've worked on many projects over the years, from research articles to whole businesses. These are a few recent ones."
     >
       <ul
         role="list"
