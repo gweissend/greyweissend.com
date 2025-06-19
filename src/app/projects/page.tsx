@@ -80,13 +80,13 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I\'ve made.',
+  description: 'Things I&apos;ve made.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I've made"
+      title="Things I&apos;ve made"
       intro="I build web apps that solve real problems. From health platforms to networking tools, I focus on creating digital solutions that make a meaningful impact. Here are some recent projects."
     >
       <ul
@@ -120,7 +120,7 @@ export default function Projects() {
           <hgroup>
             <h2 className="text-base/7 font-semibold text-teal-600 dark:text-teal-400">Ready to build?</h2>
             <p className="mt-2 text-4xl font-semibold tracking-tight text-balance text-zinc-900 dark:text-zinc-100 sm:text-5xl">
-              Let's create something amazing together.
+              Let&apos;s create something amazing together.
             </p>
           </hgroup>
           <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-zinc-600 dark:text-zinc-400">
