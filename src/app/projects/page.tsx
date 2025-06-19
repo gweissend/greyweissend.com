@@ -87,7 +87,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Things I've made"
-      intro="I've worked on many projects over the years, from research articles to whole businesses. These are a few recent ones."
+      intro="I build web apps that solve real problems. From health platforms to networking tools, I focus on creating digital solutions that make a meaningful impact. Here are some recent projects."
     >
       <ul
         role="list"
@@ -114,6 +114,31 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
+      
+      <div className="mt-24 bg-zinc-50 dark:bg-zinc-900/5">
+        <div className="mx-auto max-w-2xl px-6 py-16 sm:py-24 text-center">
+          <hgroup>
+            <h2 className="text-base/7 font-semibold text-teal-600 dark:text-teal-400">Ready to build?</h2>
+            <p className="mt-2 text-4xl font-semibold tracking-tight text-balance text-zinc-900 dark:text-zinc-100 sm:text-5xl">
+              Let's create something amazing together.
+            </p>
+          </hgroup>
+          <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-zinc-600 dark:text-zinc-400">
+            I specialize in building full-stack web applications from concept to deployment. 
+            Whether you need a health platform, networking tool, or custom solution, let's discuss your project.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://calendly.com/greyweissend"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors"
+            >
+              Let's talk
+            </a>
+          </div>
+        </div>
+      </div>
     </SimpleLayout>
   )
 }

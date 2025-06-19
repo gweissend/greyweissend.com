@@ -16,6 +16,11 @@ import logoEpistasis from '@/images/logos/epistasis.svg'
 import logoAsiaGreenFund from '@/images/logos/asiaGreenFund.svg'
 import logoRvaelectronics from '@/images/logos/rvaelectronics.svg'
 import logoSeed from '@/images/logos/seed.svg'
+import logoMyHealthApp from '@/images/logos/myhealthapp.svg'
+import logoJustBurnt from '@/images/logos/burnt-logo.svg'
+import logoReeBee from '@/images/logos/ReeBee.svg'
+import logoPersonal from '@/images/logos/personal.svg'
+import logoMylin from '@/images/logos/mylin-logo.png'
 import peanut from '@/images/photos/peanut.jpg'
 import work from '@/images/photos/work.jpg'
 import buffalo from '@/images/photos/buffalo.jpg'
@@ -148,9 +153,10 @@ interface Role {
   logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
+  href?: string
 }
 
-function Role({ role }: { role: Role }) {
+function Role({ role, projects }: { role: Role, projects?: Array<{logo: any, href: string, name: string}> }) {
   let startLabel =
     typeof role.start === 'string' ? role.start : role.start.label
   let startDate =
@@ -160,45 +166,97 @@ function Role({ role }: { role: Role }) {
   let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
 
   return (
-    <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+    <li className="flex flex-col gap-4">
+      <div className="flex gap-4">
+        <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+          <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+        </div>
+        <dl className="flex flex-auto flex-wrap gap-x-2">
+          <dt className="sr-only">Company</dt>
+          <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+            {role.href ? (
+              <Link 
+                href={role.href} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-teal-500 transition-colors"
+              >
+                {role.company}
+              </Link>
+            ) : (
+              role.company
+            )}
+          </dd>
+          {role.title && (
+            <>
+              <dt className="sr-only">Role</dt>
+              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                {role.title}
+              </dd>
+            </>
+          )}
+          <dt className="sr-only">Date</dt>
+          <dd
+            className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+            aria-label={`${startLabel} until ${endLabel}`}
+          >
+            <time dateTime={startDate}>{startLabel}</time>{' '}
+            <span aria-hidden="true">—</span>{' '}
+            <time dateTime={endDate}>{endLabel}</time>
+          </dd>
+        </dl>
       </div>
-      <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
-        </dd>
-        <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
-        </dd>
-        <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
-        >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
-        </dd>
-      </dl>
+      
+      {projects && (
+        <div className="relative ml-14 pb-2">
+          {/* Vertical line from Mylin Studio through all projects */}
+          <div className="absolute -left-7 top-0 bottom-2 w-px bg-zinc-200 dark:bg-zinc-700"></div>
+          
+          <div className="space-y-3">
+            {projects.map((project, projectIndex) => (
+              <div key={projectIndex} className="relative">
+                {/* Horizontal connecting line */}
+                <div className="absolute -left-7 top-1/2 w-7 h-px bg-zinc-200 dark:bg-zinc-700"></div>
+                
+                <Link
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-3 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 p-2 rounded-lg transition-colors"
+                >
+                  <div className="flex h-8 w-8 items-center justify-center transition-transform group-hover:scale-110">
+                    <Image src={project.logo} alt={project.name} className="h-6 w-6" unoptimized />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                      {project.name}
+                    </span>
+                    <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                      {project.href.replace('https://', '').replace('www.', '')}
+                    </span>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </li>
   )
 }
 
 function Resume() {
   let resume: Array<Role> = [
-    // {
-    //   company: 'Epistasis',
-    //   title: 'CEO',
-    //   logo: logoEpistasis,
-    //   start: '2023',
-    //   end: {
-    //     label: 'Present',
-    //     dateTime: new Date().getFullYear().toString(),
-    //   },
-    // },
+    {
+      company: 'Mylin Studio',
+      title: 'Founder',
+      logo: logoMylin,
+      start: '2024',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
     {
       company: 'J.P. Morgan Chase',
       title: 'VP, Product Management',
@@ -229,6 +287,12 @@ function Resume() {
     },
   ]
 
+  const projects = [
+    { logo: logoReeBee, href: 'https://www.reebee.org/', name: 'Reebee' },
+    { logo: logoJustBurnt, href: 'https://www.justburnt.com/', name: 'JustBurnt' },
+    { logo: logoMyHealthApp, href: 'https://myhealthapp.org/', name: 'My Health App' },
+  ]
+
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -237,13 +301,20 @@ function Resume() {
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
+          <Role 
+            key={roleIndex} 
+            role={role} 
+            projects={role.company === 'Mylin Studio' ? projects : undefined}
+          />
         ))}
       </ol>
-      <Button href="https://drive.google.com/file/d/17MqZf2H03BgJJA4ezxPMIw72CZ8JC__U/view?usp=sharing" variant="secondary" className="group mt-6 w-full">
+      
+{/* Hidden for now
+      <Button href="/grey_weissend_resume.pdf" variant="secondary" className="group mt-6 w-full" download>
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
+      */}
     </div>
   )
 }
@@ -325,7 +396,27 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+              <div className="text-center">
+                <h2 className="text-sm font-semibold text-teal-600 dark:text-teal-400 mb-2">
+                  Ready to build?
+                </h2>
+                <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+                  Let's create something amazing together
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+                  I build full-stack web applications from concept to deployment. Let's discuss your project.
+                </p>
+                <a
+                  href="https://calendly.com/greyweissend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-teal-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors"
+                >
+                  Let's talk
+                </a>
+              </div>
+            </div>
             <Resume />
           </div>
         </div>

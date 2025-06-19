@@ -13,6 +13,7 @@ type ButtonProps = {
 } & (
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
   | React.ComponentPropsWithoutRef<typeof Link>
+  | (React.ComponentPropsWithoutRef<'a'> & { href: string })
 )
 
 export function Button({
@@ -28,6 +29,8 @@ export function Button({
 
   return typeof props.href === 'undefined' ? (
     <button className={className} {...props} />
+  ) : 'download' in props ? (
+    <a className={className} {...(props as React.ComponentPropsWithoutRef<'a'>)} />
   ) : (
     <Link className={className} {...props} />
   )
