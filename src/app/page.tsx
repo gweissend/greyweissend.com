@@ -289,7 +289,7 @@ function Resume() {
 
   const projects = [
     { logo: logoReeBee, href: 'https://www.reebee.org/', name: 'Reebee' },
-    { logo: logoJustBurnt, href: 'https://www.justburnt.com/', name: 'JustBurnt' },
+    { logo: logoJustBurnt, href: 'https://www.justburnt.com/', name: 'Burnt' },
     { logo: logoMyHealthApp, href: 'https://myhealthapp.org/', name: 'My Health App' },
   ]
 
