@@ -25,7 +25,7 @@ import peanut from '@/images/photos/peanut.jpg'
 import work from '@/images/photos/work.jpg'
 import buffalo from '@/images/photos/buffalo.jpg'
 import mountains from '@/images/photos/mountains.jpg'
-import kalidescope from '@/images/photos/kalidescope.jpg'
+import greyHeadshot from '@/images/photos/grey_headshot.jpeg'
 import rocktop from '@/images/photos/rocktop.jpg'
 import wonder from '@/images/photos/wonder.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
@@ -156,7 +156,7 @@ interface Role {
   href?: string
 }
 
-function Role({ role, projects }: { role: Role, projects?: Array<{logo: any, href: string, name: string}> }) {
+function Role({ role, projects }: { role: Role, projects?: Array<{ logo: any, href: string, name: string }> }) {
   let startLabel =
     typeof role.start === 'string' ? role.start : role.start.label
   let startDate =
@@ -175,9 +175,9 @@ function Role({ role, projects }: { role: Role, projects?: Array<{logo: any, hre
           <dt className="sr-only">Company</dt>
           <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
             {role.href ? (
-              <Link 
-                href={role.href} 
-                target="_blank" 
+              <Link
+                href={role.href}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-teal-500 transition-colors"
               >
@@ -206,18 +206,18 @@ function Role({ role, projects }: { role: Role, projects?: Array<{logo: any, hre
           </dd>
         </dl>
       </div>
-      
+
       {projects && (
         <div className="relative ml-14 pb-2">
           {/* Vertical line from Mylin Studio through all projects */}
           <div className="absolute -left-7 top-0 bottom-2 w-px bg-zinc-200 dark:bg-zinc-700"></div>
-          
+
           <div className="space-y-3">
             {projects.map((project, projectIndex) => (
               <div key={projectIndex} className="relative">
                 {/* Horizontal connecting line */}
                 <div className="absolute -left-7 top-1/2 w-7 h-px bg-zinc-200 dark:bg-zinc-700"></div>
-                
+
                 <Link
                   href={project.href}
                   target="_blank"
@@ -301,15 +301,15 @@ function Resume() {
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
-          <Role 
-            key={roleIndex} 
-            role={role} 
+          <Role
+            key={roleIndex}
+            role={role}
             projects={role.company === 'Mylin Studio' ? projects : undefined}
           />
         ))}
       </ol>
-      
-{/* Hidden for now
+
+      {/* Hidden for now
       <Button href="/grey_weissend_resume.pdf" variant="secondary" className="group mt-6 w-full" download>
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
@@ -325,7 +325,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[buffalo, rocktop, kalidescope, work , mountains].map((image, imageIndex) => (
+        {[buffalo, rocktop, greyHeadshot, work, mountains].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -354,14 +354,14 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-           @ me
+            @ me
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-         The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.  
+            The creative process and solving problems are some of my favorite parts of life. In my work building digital products, I have focused on going from 0 to 1.
           </p>
 
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          In my personal life, I have focused on connecting with the essential, basic elements of life - breath, meditation, and my own stories.
+            In my personal life, I have focused on connecting with the essential, basic elements of life - breath, meditation, and my own stories.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
